@@ -63,7 +63,7 @@ const Bookings = () => {
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
-          {/* <thead></thead> */}
+          <thead></thead>
           <tbody>
             {bookings.map((bookings) => (
               <BookingsComponent
