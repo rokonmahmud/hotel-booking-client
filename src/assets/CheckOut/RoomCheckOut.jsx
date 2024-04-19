@@ -110,12 +110,12 @@ const RoomCheckOut = () => {
             className="w-4/6 p-4 border-none mx-auto rounded-lg"
           ></textarea>
           <div className="form-control mt-6">
-            <button
+            {/* <button
               type="submit"
               className="text-xl mx-auto w-4/6 h-16 bg-[#ff3811] rounded-lg hover:scale-95 text-white duration-300"
             >
               Order Confirm
-            </button>
+            </button> */}
           </div>
         </form>
       </div>
