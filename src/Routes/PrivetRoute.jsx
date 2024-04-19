@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { AuthContext } from "../assets/Provider/AuthProvider";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 
 
 const PrivetRoute = ({children}) => {
@@ -10,7 +10,7 @@ const PrivetRoute = ({children}) => {
     if(user){
     return children;
     }
-    return <Navigate to={'/login'}></Navigate>
+    // return <Navigate to={'/login'}></Navigate>
 };
 
 export default PrivetRoute;
