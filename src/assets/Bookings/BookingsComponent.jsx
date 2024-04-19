@@ -40,9 +40,9 @@ const BookingsComponent = ({ bookings, handleDelete }) => {
             <td className="font-bold">{date}</td>
           </div>
           <th>
-            <button className="text-m  p-2 rounded-lg bg-[#ff3811] hover:scale-95 text-white duration-300">
+            {/* <button className="text-m  p-2 rounded-lg bg-[#ff3811] hover:scale-95 text-white duration-300">
               Pending
-            </button>
+            </button> */}
           </th>
         </tr>
       </table>
