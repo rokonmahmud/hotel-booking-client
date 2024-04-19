@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Subject</span>
+                    {/* <span className="label-text">Subject</span> */}
                   </label>
                   <input
                     type="text"
