@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../assets/Sheard/Navbar";
-import Footer from "../assets/Sheard/Footer";
+// import Footer from "../assets/Sheard/Footer";
 
 
 const Layout = () => {
@@ -9,7 +9,7 @@ const Layout = () => {
             
             <Navbar></Navbar>
             <Outlet></Outlet>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 };
