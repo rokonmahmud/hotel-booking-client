@@ -1,8 +1,12 @@
-# React + Vite
+# ABOUT HIMARA
+- In this simple project we implement crud operation.
+- in this project we make some feture like room bookings.
+- this project has a minimalist user interface, and lucrative color combination. 
+- in this project we try to implement a very good user experiance and implement toast and modal with related massages.
+- It was a simple room bookings project. 
+- if you find some bug please tell us.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# LIVE_LINK
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://hotel-booking-85452.web.app/
