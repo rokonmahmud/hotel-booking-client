@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* a.active{
+a.active{
   color: #FF3811 !important;
   background-color: white !important;
   font-size: 20px;
-} */
+}
 
 body{
   font-family: 'Inter', sans-serif;
