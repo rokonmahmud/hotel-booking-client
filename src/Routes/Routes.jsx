@@ -34,12 +34,13 @@ const router = createBrowserRouter([
         },
         {
           path: "/rooms",
-          loader: ()=>fetch('http://localhost:5000/rooms'),
+          loader: ()=>fetch('https://my-hotel-server-weld.vercel.app/rooms'),
           element: <Room/>
         },
+        //https://my-hotel-server-weld.vercel.app
         {
           path: "/rooms/:id",
-          loader: ({params})=> fetch(`http://localhost:5000/rooms/${params.id}`),
+          loader: ({params})=> fetch(`https://my-hotel-server-weld.vercel.app/rooms/${params.id}`),
           element: <PrivetRoute><RoomDetails/></PrivetRoute>,
         },
         {
@@ -49,8 +50,9 @@ const router = createBrowserRouter([
         {
           path:"/roomcheckout/:id",
           element:<RoomCheckOut/>,
-          loader: ({params})=>fetch(`http://localhost:5000/rooms/${params.id}`)
+          loader: ({params})=>fetch(`https://my-hotel-server-weld.vercel.app/rooms/${params.id}`)
         },
+        //https://my-hotel-server-weld.vercel.app/
         {
           path: "/bookingsdata",
           element: <Bookings/>

@@ -29,7 +29,7 @@ const RoomCheckOut = () => {
          }
          console.log(booking);
 
-         fetch('http://localhost:5000/bookings',{
+         fetch('https://my-hotel-server-weld.vercel.app/bookings',{
             method:'POST',
             headers: {
                 'content-type': 'application/json'

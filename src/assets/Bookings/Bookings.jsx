@@ -10,7 +10,7 @@ const Bookings = () => {
 
   const [bookings, setBookings] = useState([]);
 
-  const url = `http://localhost:5000/bookings?email=${user?.email}`;
+  const url = `https://my-hotel-server-weld.vercel.app/bookings?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -28,7 +28,7 @@ const Bookings = () => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         Swal.fire("DELETED!", "", "success");
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://my-hotel-server-weld.vercel.app/bookings/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

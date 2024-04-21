@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import SocialLogin from "./socialLogin";
+import axios from "axios";
 
 const Login = () => {
   const { signin } = useContext(AuthContext);
@@ -16,9 +17,15 @@ const Login = () => {
 
     signin(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        const loggedinUser = result.user;
+        const user = {email}
+        console.log(loggedinUser);
         nevigate('/');
+        axios.post('https://my-hotel-server-weld.vercel.app/jwt', user, {withCredentials: true})
+        .then(res => {
+          console.log(res.data);
+        })
+        
       })
       .catch((error) => console.log(error));
   };
